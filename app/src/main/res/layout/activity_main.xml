@@ -16,7 +16,7 @@
             android:id="@+id/textview"
             android:layout_width="@dimen/dp400"
             android:layout_height="wrap_content"
-            android:text="灵山吉祥地，无锡好地方，二泉映月流连忘返,我是邱瑜丹，这只是一个demo，并不是完整的程序"
+            android:text="灵山吉祥地，无锡好地方，二泉映月流连忘返,太湖三白真是鲜"
             android:singleLine="true"
             android:textColor="@color/textColor"
             android:textSize="@dimen/font_21sp"

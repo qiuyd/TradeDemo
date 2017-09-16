@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textview.setSelected(true);
 
 
-        //开启一个线程，用于循环
+        //开启一个线程，用于循环,海报循环
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -160,5 +160,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean isDestroyed() {
         isLooper = false;
         return super.isDestroyed();
+        
     }
 }
