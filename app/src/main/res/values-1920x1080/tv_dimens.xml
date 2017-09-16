@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">0.0dip</dimen>
+    <dimen name="activity_vertical_margin">0.0dip</dimen>
+    <dimen name="activity_left_margin">330.0px</dimen>
+    <dimen name="coverflow_width">1920.0px</dimen>
+    <dimen name="coverflow_height">600.0px</dimen>
+    <dimen name="coverflow_top">50.0px</dimen>
+    <dimen name="coverflow_item_content_left">2000.0px</dimen>
+    <dimen name="coverflow_item_content_top">100.0px</dimen>
+    <dimen name="coverflow_leftx">-2500.0px</dimen>
+    <dimen name="coverflow_rightx">2500.0px</dimen>
+
+
+    <dimen name="fu">-16px</dimen>
+  <!--  <dimen name="coverflow_item_content_width">700.0px</dimen>
+    <dimen name="coverflow_item_content_height">700.0px</dimen>-->
+
+    <!--<dimen name="coverflow_item_background_width">600.0px</dimen>-->
+    <!--<dimen name="coverflow_item_background_height">390.0px</dimen>-->
+    <!--<dimen name="coverflow_item_background_top">94.0px</dimen>-->
+
+
+ <!--   <dimen name="coverflow_item_forcus_width">698.0px</dimen>
+    <dimen name="coverflow_item_forcus_height">478.0px</dimen>
+    <dimen name="coverflow_item_forcus_top">50.0px</dimen>-->
+
+
+    <dimen name="coverflow_item_reflection_height">150.0px</dimen>
+</resources>

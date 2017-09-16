@@ -1,0 +1,43 @@
+html,body{
+	min-height:100%;
+}
+body{	
+		background-size: cover;
+		overflow: hidden;
+		width: 100%;
+		height: 100px;
+}
+
+.vedioList ul li{
+	float: left;
+	padding-top: 20px;
+}
+img{
+	padding: 8px;
+}
+
+ul{
+	width: 4000px;
+}
+span{
+
+	display: block;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#footer{
+	margin:0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+//	border: 1px blue solid;
+	margin-top: 2px;
+}
+#main{
+	margin:0 auto;
+//	border: 1px green solid;
+}
+

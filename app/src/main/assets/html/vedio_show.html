@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>VedioShow</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/initial.css">
+<style type="text/css">
+
+    body{
+        width: 100%;
+        height: 100px;
+        background-color: #15191F;
+    }
+</style>
+</head>
+    <body>
+		<video id = "vediodisplay" controls="controls" poster="../img/loading.gif">
+            your browser does not support the video tag!      
+        </video>
+    </body>
+</html>
+<script>
+    var vedio = document.getElementById("vediodisplay");
+    var width = document.documentElement.clientWidth;
+    if(width==1280){
+        vedio.style.width = "1280px";
+        vedio.style.height = "720px";
+    }else if(width==1920){
+        vedio.style.width = "1920px";
+        vedio.style.height = "1080px";
+    }else{
+        vedio.style.width = "1920px";
+        vedio.style.height = "1080px";
+    }
+
+
+    var href = location.href;
+    var imgID = href.substr(href.indexOf("=")+1);
+    switch(imgID){
+        case "img1":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/fxcq1.mp4";           
+            break;
+        case "img2":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/gwqf1.mp4";
+            break;
+        case "img3":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/jsl.mp4";           
+            break;
+        case "img4":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img5":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img6":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img7":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img8":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img9":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img10":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img11":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+        case "img12":
+            vedio.src = "http://wxadvideo.grandes.com.cn:8089/wuxitong/n111.mp4";           
+            break;
+
+    }
+    vedio.play();
+//    var height = document.documentElement.clientHeight;
+
+
+
+</script>
+

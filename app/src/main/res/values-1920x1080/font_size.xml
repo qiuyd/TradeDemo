@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_44sp">44sp</dimen>
+    <dimen name="font_42sp">42sp</dimen>
+    <dimen name="font_40sp">40sp</dimen>
+    <dimen name="font_36sp">36sp</dimen>
+    <dimen name="font_32sp">32sp</dimen>
+    <dimen name="font_29sp">29sp</dimen>
+    <dimen name="font_26sp">26sp</dimen>
+    <dimen name="font_20sp">20sp</dimen>
+</resources>

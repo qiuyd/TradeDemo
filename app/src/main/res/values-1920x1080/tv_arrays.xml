@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="coverflow_offsetx">
+        <item>-1180</item>
+        <item>-790</item>
+        <item>-450</item>
+        <item>0</item>
+        <item>450</item>
+        <item>790</item>
+        <item>1180</item>
+    </integer-array>
+    <integer-array name="coverflow_enter_init_x">
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>1200</item>
+        <item>1500</item>
+        <item>1700</item>
+        <item>1800</item>
+    </integer-array>
+    <integer-array name="animator_json_basetype_for_compatible">
+        <item>600</item>
+        <item>390</item>
+        <item>150</item>
+        <item>390</item>
+        <item>150</item>
+        <item>-40</item>
+        <item>90</item>
+        <item>40</item>
+        <item>-90</item>
+    </integer-array>
+    <integer-array name="animator_json_title">
+        <item>20</item>
+        <item>60</item>
+    </integer-array>
+    <integer-array name="animator_json_sprite">
+        <item>300</item>
+        <item>390</item>
+        <item>60</item>
+    </integer-array>
+    <integer-array name="coverflow_item_delta_array">
+        <item>9</item>
+        <item>12</item>
+    </integer-array>
+    <integer-array name="app_related_first_item_motion_track">
+        <item>0</item>
+        <item>21</item>
+        <item>84</item>
+        <item>189</item>
+        <item>336</item>
+        <item>526</item>
+        <item>757</item>
+        <item>884</item>
+        <item>1323</item>
+    </integer-array>
+    <integer-array name="app_related_subsequent_item_motion_track">
+        <item>0</item>
+        <item>298</item>
+        <item>585</item>
+        <item>819</item>
+        <item>1011</item>
+        <item>1161</item>
+        <item>1269</item>
+        <item>1335</item>
+        <item>1348</item>
+        <item>1347</item>
+        <item>1328</item>
+        <item>1323</item>
+    </integer-array>
+    <integer-array name="popup_button_position_x">
+        <item>583</item>
+        <item>990</item>
+    </integer-array>
+    <integer-array name="base_detail_button_positionx">
+        <item>0</item>
+        <item>320</item>
+        <item>720</item>
+        <item>1040</item>
+    </integer-array>
+    <integer-array name="base_detail_popup_button_positionx">
+        <item>686</item>
+        <item>969</item>
+    </integer-array>
+</resources>

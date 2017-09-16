@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>LDJ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/initial.css">
+<link rel="stylesheet" href="../css/ldj.css">
+</head>
+    <body id="bd">
+    	<div id = "container">
+    		<div id = "header">
+                     
+            </div>
+    		<div id = "main"></div>
+    		<div id = "footer" class = "vedioList">
+
+    			<ul id="ul">
+                    <li><img id = "img1" onkeydown="KeyDown(event)" tabindex="-1" onfocus="focused();" onblur="lostFocus();" onclick="clickItem();"><span>福喜传奇</span></li>
+                    <li><img id = "img2" onkeydown="KeyDown(event)" tabindex="-1" onfocus="focused();" onblur="lostFocus();" onclick="clickItem();"><span>鸽舞清风</span></li>
+                    <li><img id = "img3" onkeydown="KeyDown(event)" tabindex="-1" onfocus="focused();" onblur="lostFocus();" onclick="clickItem();"><span>九色鹿演出</span></li>
+                    <li><img id = "img4" onkeydown="KeyDown(event)" tabindex="-1" onfocus="focused();" onblur="lostFocus();" onclick="clickItem();"><span>故事大王比赛</span></li>
+                    <li><img id = "img5" onkeydown="KeyDown(event)" tabindex="-1" onfocus="focused();" onblur="lostFocus();" onclick="clickItem();"><span>绘画比赛</span></li>
+                    <li><img id = "img6" onkeydown="KeyDown(event)" tabindex="-1" onfocus="focused();" onblur="lostFocus();" onclick="clickItem();"><span>卡拉OK比赛</span></li>
+                    <li><img id = "img7" onkeydown="KeyDown(event)" tabindex="-1" onfocus="focused();" onblur="lostFocus();" onclick="clickItem();"><span>舞蹈比赛</span></li>
+    			</ul>
+    		</div>
+    	</div>
+    </body>
+</html>
+
+<script type="text/javascript">
+
+    var documentHeight = document.documentElement.clientHeight;
+    var documentWidth = document.documentElement.clientWidth;
+    var footer = document.getElementById("footer");
+
+    if(documentWidth==1280){
+//        footer.style.width = "863px";   //显示5个
+        footer.style.width = "963px"; 
+        var liList = document.getElementsByTagName("li")
+        for(var i=0;i<liList.length;i++){
+            liList[i].style.marginRight = "45px";
+        }
+//        document.getElementsByTagName("img").style.height="200px";
+//        document.getElementsByTagName("img").style.width="139px";
+        document.getElementById("bd").style.backgroundImage="url('../img/background_1280.jpg')";
+        document.getElementById("img1").src="../img/item1.jpg";
+        document.getElementById("img2").src="../img/item2.jpg";
+        document.getElementById("img3").src="../img/item3.jpg";
+        document.getElementById("img4").src="../img/item4.jpg";
+        document.getElementById("img5").src="../img/item5.jpg";
+        document.getElementById("img6").src="../img/item6.jpg";
+        document.getElementById("img7").src="../img/item7.jpg";
+    }else if(documentWidth==1920){
+//        footer.style.width = "1123px";   //显示5个
+        footer.style.width = "1403px";   //显示5个
+        var liList = document.getElementsByTagName("li");
+        for(var i=0;i<liList.length;i++){
+            liList[i].style.marginRight="90px";
+        }
+ //       document.getElementsByTagName("img").style.height="280px";
+ //       document.getElementsByTagName("img").style.width="191px";
+        document.getElementById("bd").style.backgroundImage="url('../img/background_1920.jpg')";
+        document.getElementById("img1").src="../img/item1_1920.jpg";
+        document.getElementById("img2").src="../img/item2_1920.jpg";
+        document.getElementById("img3").src="../img/item3_1920.jpg";
+        document.getElementById("img4").src="../img/item4_1920.jpg";
+        document.getElementById("img5").src="../img/item5_1920.jpg";
+        document.getElementById("img6").src="../img/item6_1920.jpg";
+        document.getElementById("img7").src="../img/item7_1920.jpg";
+    }else{
+        footer.style.width = "1403px";   //显示5个
+        var liList = document.getElementsByTagName("li");
+        for(var i=0;i<liList.length;i++){
+            liList[i].style.marginRight="90px";
+        }
+        document.getElementById("bd").style.backgroundImage="url('../img/background_1920.jpg')";
+        document.getElementById("img1").src="../img/item1_1920.jpg";
+        document.getElementById("img2").src="../img/item2_1920.jpg";
+        document.getElementById("img3").src="../img/item3_1920.jpg";
+        document.getElementById("img4").src="../img/item4_1920.jpg";
+        document.getElementById("img5").src="../img/item5_1920.jpg";
+        document.getElementById("img6").src="../img/item6_1920.jpg";
+        document.getElementById("img7").src="../img/item7_1920.jpg";      
+    }
+
+    
+    footer.style.height = (documentHeight-2)*0.40+"px";
+
+    var main = document.getElementById("main");
+    main.style.width = (screen.width)*0.9+"px";
+    main.style.height = (documentHeight-2)*0.60+"px";
+
+    var img1 = document.getElementById("img1");
+    img1.focus();
+    var temp;
+    function KeyDown(event){
+        var event = event||window.event;
+        var key = event.keyCode;
+//        alert(key);
+        console.info("keydownFun");
+        var focus = document.activeElement;
+        var liList = [document.getElementById("img1"),document.getElementById("img2"),document.getElementById("img3"),document.getElementById("img4"),document.getElementById("img5"),document.getElementById("img6"),document.getElementById("img7")];
+        for(var i=0;i<liList.length;i++){
+            if(liList[i]===focus) break;
+        }
+//        console.info("keydownFun");
+        switch(key){
+            case 37:
+                if(i>0){
+                    liList[i-1].focus();
+ //                   alert(key);
+                }
+                break;
+            case 39:
+                if(i<6){
+                    liList[i+1].focus();
+                }
+                break;
+            default :
+                break;
+        }
+    }
+    function focused(){
+//        var focusing = document.activeElement.children[0];
+        var focusing = document.activeElement;
+        focusing.style.border = "4px rgb(0,194,253) solid";
+        temp = focusing;
+        temp.parentNode.style.paddingTop="1px";
+//        alert(focusing.id);
+        console.info(focusing.id);
+    }
+    function lostFocus(){
+        var lost = temp;
+        temp.parentNode.style.paddingTop="20px";
+        lost.style.border = "0px";
+    }
+
+    function clickItem(){
+        switch(temp.id){
+            case "img1":
+                window.location.href="vedio_show.html?id=img1";
+                break;
+            case "img2":
+                window.location.href="vedio_show.html?id=img2";
+                break;
+            case "img3":
+                window.location.href="vedio_show.html?id=img3";
+                break;
+            case "img4":
+                window.location.href="vedio_show.html?id=img4";
+                break;
+            case "img5":
+                window.location.href="vedio_show.html?id=img5";
+                break;
+            case "img6":
+                window.location.href="vedio_show.html?id=img6";
+                break;
+            case "img7":
+                window.location.href="vedio_show.html?id=img7";
+                break;
+        }
+         
+    }
+</script>
