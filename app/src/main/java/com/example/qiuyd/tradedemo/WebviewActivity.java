@@ -35,6 +35,8 @@ public class WebviewActivity extends AppCompatActivity {
                     if(webView.canGoBack()) {
                         webView.goBack();
                         return true;
+                    }else{
+                        return false;
                     }
                 }
                 return false;
